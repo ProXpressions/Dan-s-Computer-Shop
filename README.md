@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dan's Computer Repair Shop - Internal Dashboard
 
-## Getting Started
+This is a web application built to serve as an internal dashboard for "Dan's Computer Repair Shop." It provides a user interface for managing key business operations, including repair tickets and customer information. The application features a clean, modern design with both light and dark modes.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Tech Stack](#tech-stack)
+- [Project Status](#project-status)
+- [Key Features](#key-features)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Future Development](#future-development)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project is built with a modern, type-safe, and efficient technology stack:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-   **Framework**: [Next.js](https://nextjs.org/) 15 (with App Router)
+-   **Build Tool**: Turbopack
+-   **Language**: [TypeScript](https://www.typescriptlang.org/)
+-   **Styling**: [Tailwind CSS](https://tailwindcss.com/) v4
+-   **UI Components**: [shadcn/ui](https://ui.shadcn.com/) (Button, Dropdown Menu)
+-   **Icons**: [Lucide React](https://lucide.dev/)
+-   **Theming**: [next-themes](https://github.com/pacocoursey/next-themes) for light/dark mode functionality.
+-   **Fonts**: [Geist Sans](https://vercel.com/font) and [Geist Mono](https://vercel.com/font) for typography.
 
-## Learn More
+## Project Status
 
-To learn more about Next.js, take a look at the following resources:
+The project is currently in the initial development phase. The core layout, navigation, and basic UI components have been established. The main dashboard area is structured, and placeholder pages for key features have been created.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-   **Landing Page**: A visually appealing, public-facing landing page located at the root (`/`) of the application.
+-   **Dashboard Layout**: A dedicated internal application layout under the `/(rs)` route group, featuring a persistent header and navigation.
+-   **Responsive Header**: A sticky header component that includes the application title and primary navigation links.
+-   **Icon-Based Navigation**: Intuitive navigation using `lucide-react` icons for links to Home, Tickets, and Customers.
+-   **Dark/Light Mode**: A theme toggle in the header allows users to switch between light, dark, and system-default themes.
+-   **Smooth Page Transitions**: Subtle fade-in and slide-down animations have been implemented for a better user experience as the user navigates the application.
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The codebase is organized following Next.js App Router conventions.
