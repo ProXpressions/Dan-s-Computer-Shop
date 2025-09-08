@@ -1,7 +1,8 @@
 import React from "react";
-import { HomeIcon, File, UserRound } from "lucide-react";
+import { Home, File, UserRound } from "lucide-react"; // Corrected import name for clarity
 import Link from "next/link";
 import NavButon from "./NavButon";
+import { ModeToggle } from "./ModeToggle";
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
       <header className="animate-slide bg-background h-12 p-2 border-b sticky top-0 z-20">
         <div className="flex h-8 items-center justify-between w-full">
           <div className="flex items-center gap-2">
-            <NavButon href="/home" label="Home" icon={HomeIcon} />
+            <NavButon href="/home" label="Home" icon={Home} />
             <Link
               href={"/home"}
               className="flex justify-center items-center gap-2 ml-0"
@@ -24,6 +25,7 @@ const Header = () => {
           <div className="flex items-center">
             <NavButon href="/tickets" label="Tickets" icon={File} />
             <NavButon href="/customers" label="Customers" icon={UserRound} />
+            <ModeToggle />
           </div>
         </div>
       </header>

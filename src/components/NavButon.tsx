@@ -1,30 +1,33 @@
-import React from 'react'
-import { Icon, LucideIcon } from 'lucide-react'
-import { Button } from './ui/button'
-import Link from 'next/link'
+import React from "react";
+import { LucideIcon } from "lucide-react";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 type Props = {
-    icon: LucideIcon,
-    label: string,
-    href?: string
-}
+  icon: LucideIcon;
+  label: string;
+  href?: string;
+};
 
-const NavButon = ({
-    icon: icon,
-    label,
-    href
-}: Props) => {
+const NavButon = ({ icon: Icon, label, href }: Props) => {
   return (
-    <Button variant={'ghost'} size={'icon'} aria-label={label} title={label} className='rounded-full' asChild>
-        {href ? (
-            <Link href={href}>
-                <icon />
-            </Link>
-        ) : (
-            <Icon />
-        )}
+    <Button
+      variant={"ghost"}
+      size={"icon"}
+      aria-label={label}
+      title={label}
+      className="rounded-full"
+      asChild
+    >
+      {href ? (
+        <Link href={href}>
+          <Icon />
+        </Link>
+      ) : (
+        <Icon />
+      )}
     </Button>
-  )
-}
+  );
+};
 
-export default NavButon
+export default NavButon;
